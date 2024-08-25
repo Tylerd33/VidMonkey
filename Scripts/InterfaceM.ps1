@@ -9,7 +9,7 @@ param(
 
 if($test){
     $CombinedURL = "https://www.youtube.com/watch?v=FJVFXsNzYZQ https://www.youtube.com/watch?v=QYVucud3ptc https://www.youtube.com/watch?v=ZzI9JE0i6Lc&list=PL0vfts4VzfNjdPuyk9SJDIvpsOjNgU1bs&pp=iAQB https://www.youtube.com/watch?v=RlPNh_PBZb4&pp=ygUOb2xpdmlhIHJvZHJpZ28%3D https://www.youtube.com/watch?v=X0DvM9DaZl4&pp=ygUOb2xpdmlhIHJvZHJpZ28%3D https://www.youtube.com/watch?v=Udte0tu7IZw&pp=ygUOb2xpdmlhIHJvZHJpZ28%3D"
-    ./DownRand -URL $CombinedURL
+    ./DownRandM -URL $CombinedURL
 }
 
 #Gets user input, formats it and sends it to ./DownRand
@@ -35,5 +35,5 @@ else{
     $CombinedURl = $CombinedURL.Trim()
 
     $CombinedURL
-    ./DownRand -URL $CombinedURL
+    ./DownRandM -URL $CombinedURL
 }
